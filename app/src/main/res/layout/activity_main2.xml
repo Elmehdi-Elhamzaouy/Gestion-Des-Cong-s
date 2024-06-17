@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2"
+    android:background="@drawable/background_design">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/exit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/close"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Demande"
+        android:textSize="40dp"
+        android:textColor="#009688"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shadow">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="530dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demandeur:"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/demandeur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type de Conges:"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/type_conges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:entries="@array/type_conges"
+                    android:prompt="@string/type_hint"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/debut"
+                    android:layout_width="40mm"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/fields"
+                    android:hint="Date Début"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#FFC107"/>
+
+                <View
+                    android:id="@+id/date_debut"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/calendar"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/fin"
+                    android:layout_width="40mm"
+                    android:layout_height="50dp"
+                    android:paddingLeft="20dp"
+                    android:hint="Date de Fin"
+                    android:textColorHint="#FFC107"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/fields"/>
+                <View
+                    android:id="@+id/date_fin"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/calendar"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/nb_jours"
+                    android:layout_width="240dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/fields"
+                    android:hint="Nombre de Jours"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#FFC107" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/textArea"
+                android:layout_width="55mm"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radiussed"
+                android:backgroundTint="#E8EDF2"
+                android:gravity="top|start"
+                android:hint="Commentaire"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:scrollbars="vertical"
+                android:textColorHint="#FFC107" />
+
+            <CheckBox
+                android:id="@+id/valide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Je Valide"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="7dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/radiussed"
+        android:backgroundTint="#2C3C2D"
+        android:text="Save"
+        android:textColor="#323019"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

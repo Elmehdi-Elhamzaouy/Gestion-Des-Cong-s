@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#B37B15</color>
+    <color name="green">#0F700F</color>
+    <color name="red">#8F1616</color>
+
+    <color name="background_color">#B3E5FC</color> <!-- Light blue -->
+    <color name="background_gradient_start">#B3E5FC</color> <!-- Light blue -->
+    <color name="background_gradient_end">#4FC3F7</color> <!-- Darker blue -->
+    <color name="primary_text">#333333</color> <!-- Dark gray -->
+    <color name="button_color">#388E3C</color> <!-- Dark green -->
+    <color name="table_header_background">#388E3C</color> <!-- Dark green -->
+    <color name="divider_color">#BDBDBD</color> <!-- Medium gray -->
+</resources>
